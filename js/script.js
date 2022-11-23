@@ -31,11 +31,14 @@ function myButtonClicked() {
   if (children == true) {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can only watch a G rated film.</p>"
-  } 
-  elseif (teenagers == true) ;{
+  }
+  elseif(teenagers == true)
+  {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can watch a PG-13 rated film and below.</p>"
-  } elseif (adult == true) ;{
+  }
+  elseif(adult == true)
+  {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can watch an R rated film!</p>"
   }
