@@ -9,8 +9,8 @@
     <meta name="author" content="Ali Mugamai" />
     <meta name="theme-color" content="#FFFFFF" />
     <title>My first Slider</title>
-    <link rel="canonical" href="https://Ali-Mugamai.github.io/ICS20-5-02-JS/" />
-    <link rel="manifest" href="/ICS20-5-02-JS/manifest.webmanifest" />
+    <link rel="canonical" href="https://Ali-Mugamai.github.io/ICS20-5-03-Js-/" />
+    <link rel="manifest" href="/ICS20-5-03-Js-/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- None blocking for Lighthouse report -->
     <!-- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously -->
@@ -63,31 +63,44 @@
         <div id="radio-buttons">
           <label
             class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="positive_number"
+            for="kids"
           >
             <input
               checked
               class="mdl-radio__button"
-              id="positive_number"
+              id="kids"
               name="flash"
               type="radio"
               value="on"
             />
-            <span class="mdl-radio__label">positive</span>
+            <span class="mdl-radio__label">12 or under</span>
           </label>
           <label
             class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
-            for="Negative_number"
+            for="teens"
           >
             <input
               class="mdl-radio__button"
-              id="Negative_number"
+              id="teens"
               name="flash"
               type="radio"
               value="off"
             />
-            <span class="mdl-radio__label">negative</span>
+            <span class="mdl-radio__label">13-16</span>
           </label>
+          <label
+          class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+          for="adults"
+        >
+          <input
+            class="mdl-radio__button"
+            id="adults"
+            name="flash"
+            type="radio"
+            value="off"
+          />
+          <span class="mdl-radio__label">17+</span>
+        </label>
         </div>
         <div>
           <!-- Raised button with ripple -->

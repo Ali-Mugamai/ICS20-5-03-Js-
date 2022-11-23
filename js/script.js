@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-5-02-JS/sw.js", {
-    scope: "/ICS20-5-02-JS/",
+  navigator.serviceWorker.register("/ICS20-5-03-Js-/sw.js", {
+    scope: "/ICS20-5-03-Js-/",
   })
 }
 
@@ -24,16 +24,19 @@ function updateSliderValue(valueFromSlider) {
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("positive_number").checked
+  children = document.getElementById("kids").checked
+  teenagers = document.getElementById("teens").checked
+  adult = document.getElementById("adults").checked
 
-  const randomNumber = Math.floor(Math.random() * 6) + 1
-  const negative_random = Math.floor(Math.random() * -5) - 1
-
-  if (buttonOnChecked == true) {
+  if (children == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: " + randomNumber + "</p>"
-  } else {
+      "<p>you can only watch a G rated film.</p>"
+  } 
+  elseif (teenagers == true) ;{
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: " + negative_random + "</p>"
+      "<p>you can watch a PG-13 rated film and below.</p>"
+  } elseif (adult == true) ;{
+    document.getElementById("radio-button-value").innerHTML =
+      "<p>you can watch an R rated film!</p>"
   }
 }
