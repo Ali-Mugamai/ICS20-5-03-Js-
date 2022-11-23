@@ -31,16 +31,13 @@ function myButtonClicked() {
   if (children == true) {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can only watch a G rated film.</p>"
-  } 
-  else if (teenagers == true) {
+  } else if (teenagers == true) {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can watch a PG-13 rated film and below.</p>"
-  } 
-  else if (adult == true) {
+  } else if (adult == true) {
     document.getElementById("radio-button-value").innerHTML =
       "<p>you can watch an R rated film!</p>"
   } else {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>idk</p>"
+    document.getElementById("radio-button-value").innerHTML = "<p>idk</p>"
   }
 }
