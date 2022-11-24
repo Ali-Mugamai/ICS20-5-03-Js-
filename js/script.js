@@ -29,15 +29,15 @@ function myButtonClicked() {
   adult = document.getElementById("adults").checked
 
   if (children == true) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("answer").innerHTML =
       "<p>you can only watch a G rated film.</p>"
   } else if (teenagers == true) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("answer").innerHTML =
       "<p>you can watch a PG-13 rated film and below.</p>"
   } else if (adult == true) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("answer").innerHTML =
       "<p>you can watch an R rated film!</p>"
   } else {
-    document.getElementById("radio-button-value").innerHTML = "<p>idk</p>"
+    document.getElementById("answer").innerHTML = "<p>not working</p>"
   }
 }
